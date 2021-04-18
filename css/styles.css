@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    /* font */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Encabezado*/
+
+.header {
+    text-align: left;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 10%;
+    height: 85vh;
+}
+
+.header h1 {
+    color: cadetblue;
+    font-size: 90px;
+}
+
+.flex {
+    font-size: 45px;
+    padding-bottom: 150px;
+    padding: 50px 55px;
+}
+
+
+/* Definición de columnas*/
+
+.column-2 {
+    float: left;
+    width: 50%;
+    font-size: 40px;
+}
+
+.column-2 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.column-3 {
+    float: right;
+    width: 50%;
+    font-size: 40px;
+}
+
+.column-3 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.column-4 {
+    float: left;
+    width: 50%;
+    font-size: 40px;
+}
+
+.column-4 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.column-5 {
+    width: 100%;
+}
+
+.column-6 {
+    width: 25%;
+    float: left;
+}
+
+.column-6 p {
+    font-size: 10px;
+}
+
+#section-1 {
+    text-align: left;
+    font-size: 20px;
+    background-color: #f5eef5;
+}
+
+#section-1 h1 {
+    color: grey;
+}
+
+#section-2 {
+    text-align: left;
+    font-size: 20px;
+    background-color: #FAF5F3;
+}
+
+#section-2 h1 {
+    color: grey;
+}
+
+#section-3 {
+    text-align: left;
+    font-size: 20px;
+    background-color: #F2F9F8;
+}
+
+#section-3 h1 {
+    color: grey;
+}
+
+#section-4 {
+    color: azure;
+    background-color: black;
+    padding: 3.5% 7.5%;
+}
+
+p {
+    font-size: 35px;
+}
+
+
+/*Reglas auxiliares*/
+
+.padding-lat {
+    padding: 50px 55px;
+}
+
+.padding-left {
+    padding-left: 8%;
+}
+
+.padding-tb h1 {
+    padding-bottom: 20px;
+}
+
+
+/* Responsive layout*/
+
+@media screen and (max-width:700px) {
+    #header h1 {
+        font-size: 70px;
+    }
+    #header p {
+        font-size: 25px;
+    }
+    .column-2 {
+        width: 100%;
+        font-size: 20px;
+    }
+    .column-2 img {
+        width: 90%;
+    }
+    .column-2 p {
+        font-size: 30px;
+    }
+    .column-3 {
+        width: 100%;
+        font-size: 20px;
+    }
+    .column-3 p {
+        font-size: 30px;
+    }
+    .column-3 img {
+        width: 90%;
+    }
+    .column-4 {
+        width: 90%;
+        font-size: 20px;
+    }
+    .column-4 p {
+        font-size: 30px;
+    }
+    .column-6 {
+        width: 50%;
+        float: left;
+    }
+    .flex:not(#header) {
+        display: block;
+    }
+}
