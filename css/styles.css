@@ -29,14 +29,14 @@ body {
 }
 
 .header h1 {
-    color: cadetblue;
+    color: rgb(64, 147, 150);
     font-size: 90px;
 }
 
 .flex {
-    font-size: 45px;
-    padding-bottom: 150px;
-    padding: 50px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -135,8 +135,8 @@ p {
     padding: 50px 55px;
 }
 
-.padding-left {
-    padding-left: 8%;
+.padding-right {
+    padding-right: 8%;
 }
 
 .padding-tb h1 {
@@ -180,11 +180,14 @@ p {
     .column-4 p {
         font-size: 30px;
     }
+    .column-4 img {
+        width: 100%;
+    }
     .column-6 {
         width: 50%;
         float: left;
     }
-    .flex:not(#header) {
-        display: block;
+    .flex {
+        display: table;
     }
 }
